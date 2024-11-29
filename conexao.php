@@ -7,7 +7,7 @@ Dotenv\Dotenv::createImmutable(__DIR__)->load();
 $dbHost = $_ENV['DB_HOST'];
 $dbName = $_ENV['DB_NAME'];
 $dbUser = $_ENV['DB_USER'];
-$dbPass = $_ENV['DB_PASS'];
+$dbPass = $_ENV['DB_PASSWORD'];
 
 // Conexão com o banco de dados
 $conexao = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
